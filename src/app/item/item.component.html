@@ -1,0 +1,25 @@
+<div class="table-responsive">
+    <table class="table table-striped table-sm">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let items of item">
+                <td>{{items.id}}</td>
+                <td>{{items.name}}</td>
+                <td>{{items.brand}}</td>
+                <td>{{items.price}}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button class="btn btn-danger">Delete</button>
+                    <button class="btn btn-info" style="margin-left: 10px">Update</button>
+            </tr>
+        </tbody>
+    </table>
+</div>
