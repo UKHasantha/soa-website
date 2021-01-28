@@ -1,25 +1,53 @@
-<div class="table-responsive">
-    <table class="table table-striped table-sm">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Brand</th>
-                <th>price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let items of item">
-                <td>{{items.id}}</td>
-                <td>{{items.name}}</td>
-                <td>{{items.brand}}</td>
-                <td>{{items.price}}</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><button class="btn btn-danger">Delete</button>
-                    <button class="btn btn-info" style="margin-left: 10px">Update</button>
-            </tr>
-        </tbody>
-    </table>
-</div>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+    <h5 class="my-0 mr-md-auto font-weight-normal">Gadget Mart Shopping LK</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-dark" href="#">Features</a>
+      <a class="p-2 text-dark" href="#">Enterprise</a>
+      <a class="p-2 text-dark" href="#">Support</a>
+      <a class="p-2 text-dark" href="#">Pricing</a>
+    </nav>
+    <a class="btn btn-outline-primary" href="#">Login</a>
+    <a class="btn btn-outline-primary m-1" href="#">Sign Out</a>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3  my-5" *ngFor="let items of item">
+        <mdb-card>
+          <img src="../../assets/img/nokia 6.1.png" alt="Card image cap" >
+          <mdb-card-body>
+            <mdb-card-title>
+              <h4>{{items.brand}}</h4>
+            </mdb-card-title>
+  
+            <mdb-card-text>
+              {{items.name}}
+            </mdb-card-text>
+  
+            <button mdbBtn color="primary">Add Cart</button>
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -89,6 +90,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -120,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "gadget-mart"
+    }
+  },
+  "defaultProject": "gadget-mart",
+  "cli": {
+    "analytics": "ee5d9e9b-836c-454c-9eef-203689ba4b10"
+  }
 }
