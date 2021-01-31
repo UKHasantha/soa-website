@@ -8,10 +8,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Itemservice } from './services/itemservice';
 import { CardComponent } from './card/card.component';
-import { SignComponent } from './sign/sign.component';
 import { LoginComponent } from './login/login.component';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { Userservice } from './services/userservice';
+import { Authservice } from './services/authservice';
+import { SignupComponent } from './signup/signup.component';
+import { PaymentComponent } from './payment/payment.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -19,8 +23,11 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     AppComponent,
     ItemComponent,
     CardComponent,
-    SignComponent,
-    LoginComponent
+    SignupComponent,
+    LoginComponent,
+    SignupComponent,
+    PaymentComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +39,9 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
      
   ],
   providers: [
-    Itemservice
+    Itemservice,
+    Userservice,
+    Authservice
   ],
   bootstrap: [AppComponent]
 })
